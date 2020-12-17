@@ -22,7 +22,10 @@ a {
   text-decoration: none;
 }
 
-.main-nav__list {
+.main-nav__list,
+.footer__travel-list,
+.footer__contacts-list,
+.footer__travel-sublist {
   padding: 0;
   margin: 0;
   list-style: none;
