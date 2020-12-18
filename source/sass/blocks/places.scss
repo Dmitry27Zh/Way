@@ -1,6 +1,17 @@
 .places {
   padding-top: 199px;
   padding-bottom: 240px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 80px;
+    padding-bottom: 112px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 108px;
+    padding-bottom: 111px;
+  }
 }
 
 .places__title {
@@ -16,6 +27,15 @@
     width: 228px;
     height: 4px;
     background-color: $accent-main;
+
+    @media (max-width: $tablet-width-max) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+      margin-bottom: 20px;
+      width: auto;
   }
 }
 
@@ -26,6 +46,15 @@
   line-height: 28px;
   letter-spacing: -0.466667px;
   opacity: 0.7;
+
+  @media (max-width: $tablet-width-max) {
+      margin: 0 auto;
+      margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 20px;
+  }
 }
 
 .places__cards-list {
@@ -33,6 +62,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: -100px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-left: 8.38%;
+    padding-right: 7.69%;
+    margin-bottom: -19px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: -35px;
+  }
 }
 
 .places__card {
@@ -42,10 +84,33 @@
 
   &--montenegro {
     margin-left: 14.96%;
+
+    @media (max-width: $tablet-width-max) {
+      margin-left: 0;
+    }
   }
 
   &--croatia {
     margin-right: 14.96%;
+
+    @media (max-width: $tablet-width-max) {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 47.13%;
+    margin-bottom: 19px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+    margin-bottom: 35px;
   }
 }
 
@@ -96,6 +161,12 @@
 
 .places__card-img {
   display: block;
+  width: 100%;
+
+  @media (max-width: $mobile-width-max) {
+    width: 288px;
+    height: 425px;
+  }
 }
 
 .places__card-button {
