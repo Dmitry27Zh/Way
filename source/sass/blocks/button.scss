@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  padding: 30px 40px;
+  background-color: $accent-main;
+  color: $white;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-light;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    box-sizing: border-box;
+    width: 288px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

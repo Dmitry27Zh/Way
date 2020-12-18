@@ -4,11 +4,7 @@
   @media (max-width: $tablet-width-max) {
     margin-left: 0;
     align-self: stretch;
-    padding-top: 134px;
-    padding-bottom: 284px;
-  }
 
-  @media (max-width: $tablet-width-max) {
     &--nojs {
       .main-nav__list {
         display: block;
@@ -23,6 +19,7 @@
       .main-nav__list {
         display: block;
         position: absolute;
+        z-index: 10;
         top: 0;
         left: 0;
         width: 100vw;
@@ -34,7 +31,7 @@
       .main-nav__toggle {
         display: block;
         position: absolute;
-        z-index: 10;
+        z-index: 11;
         top: 0;
         right: 0;
         background-color: $white;
@@ -42,8 +39,13 @@
         &::before,
         &::after {
           width: 32px;
+          left: 25px;
           transform: rotate(45deg);
           background-color: rgba($deep-dark, 0.2);
+
+          @media (max-width: $mobile-width-max) {
+            left: 5px;
+          }
         }
 
         &::before {
@@ -106,7 +108,9 @@
   @media (max-width: $tablet-width-max) {
     display: none;
     margin: 0;
+    padding-top: 134px;
     max-width: none;
+    height: 100vh;
   }
 }
 
