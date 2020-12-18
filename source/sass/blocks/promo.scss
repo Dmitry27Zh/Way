@@ -7,9 +7,17 @@
   background-size: cover;
   color: $white;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-main@2x.jpg");
+  }
+
   @media (max-width: $tablet-width-max) {
     min-height: 344px;
     background-image: url("../img/background-main-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-main-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $mobile-width-max) {
@@ -27,6 +35,10 @@
       background-size: cover;
       top: 0;
       left: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background-main-mobile@2x.jpg");
+      }
     }
   }
 }
