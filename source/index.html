@@ -105,8 +105,8 @@
                   srcset="./img/card-macedonia-mobile@1x.jpg 1x, ./img/card-macedonia-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)"
                   srcset="./img/card-macedonia-tablet@1x.jpg 1x, ./img/card-macedonia-tablet@2x.jpg 2x">
-                <img src="./img/card-macedonia-desktop@1x.jpg" srcset="./img/card-macedonia-desktop@2x.jpg 2x" width="350"
-                  height="430" alt="Греция" class="places__card-img">
+                <img src="./img/card-macedonia-desktop@1x.jpg" srcset="./img/card-macedonia-desktop@2x.jpg 2x"
+                  width="350" height="430" alt="Греция" class="places__card-img">
               </picture>
             </a>
             <a href="#" class="places__card-button button">Смотреть подробнее</a>
@@ -142,6 +142,7 @@
         </ul>
         <section class="places__tabs tabs">
           <h2 class="visually-hidden">Подробное описание каждого места</h2>
+          <!--
           <ul class="tabs__menu">
             <li class="tabs__menu-item">
               <a href="#" class="tabs__title-link tabs__title-link--current">Греция</a>
@@ -159,21 +160,24 @@
               <a href="#" class="tabs__title-link">Хорватия</a>
             </li>
           </ul>
+          -->
           <ul class="tabs__list">
-            <li class="tabs__item tabs__item--current">
+            <li class="tabs__item">
               <div class="tabs__text">
                 <h3 class="tabs__text-title section-title">Греция</h3>
                 <p class="tabs__lead">На севере Греции находится один из крупнейших комплексов монастырей, расположенных
                   на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь
                   основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной
                   породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
-                  царящая в монастырях Метеоры. </p>
+                  царящая в монастырях Метеоры.</p>
                 <a href="#" class="tabs__button button">Купить тур сейчас</a>
               </div>
               <div class="tabs__picture">
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/tab-greece-mobile@1x.jpg 1x, ./img/tab-greece-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/tab-greece-tablet@1x.jpg 1x, ./img/tab-greece-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tab-greece-mobile@1x.jpg 1x, ./img/tab-greece-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/tab-greece-tablet@1x.jpg 1x, ./img/tab-greece-tablet@2x.jpg 2x">
                   <img src="./img/tab-greece-desktop@1x.jpg" srcset="./img/tab-greece-desktop@2x.jpg 2x" width="430"
                     height="596" alt="Греция" class="tabs__img">
                 </picture>
@@ -183,13 +187,149 @@
                 <blockquote class="tabs__review-inner">
                   <p class="tabs__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие
                     же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение
-                    такое, как будто стоишь на краю света! </p>
+                    такое, как будто стоишь на краю света!</p>
                   <cite class="tabs__review-author">
                     <picture>
-                      <img class="tabs__review-avatar" src="./img/review-avatar@1x.jpg"
-                        srcset="./img/review-avatar@2x.jpg 2x" width="38" height="38" alt="Влада Голицина">
+                      <img class="tabs__review-avatar" src="./img/review-greece-avatar@1x.jpg"
+                        srcset="./img/review-greece-avatar@2x.jpg 2x" width="38" height="38" alt="Влада Голицина">
                     </picture>
                     Влада Голицина
+                  </cite>
+                </blockquote>
+              </article>
+            </li>
+            <li class="tabs__item">
+              <div class="tabs__text">
+                <h3 class="tabs__text-title section-title">Албания</h3>
+                <p class="tabs__lead">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и
+                  удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно
+                  белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни,
+                  перетёртые до такого мелкого состояния.</p>
+                <a href="#" class="tabs__button button">Купить тур сейчас</a>
+              </div>
+              <div class="tabs__picture">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tab-albania-mobile@1x.jpg 1x, ./img/tab-albania-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/tab-albania-tablet@1x.jpg 1x, ./img/tab-albania-tablet@2x.jpg 2x">
+                  <img src="./img/tab-albania-desktop@1x.jpg" srcset="./img/tab-albania-desktop@2x.jpg 2x" width="430"
+                    height="596" alt="Албания" class="tabs__img">
+                </picture>
+              </div>
+              <article class="tabs__review">
+                <h3 class="tabs__review-title">Отзывы</h3>
+                <blockquote class="tabs__review-inner">
+                  <p class="tabs__review-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму
+                    с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                  <cite class="tabs__review-author">
+                    <picture>
+                      <img class="tabs__review-avatar" src="./img/review-albania-avatar@1x.jpg"
+                        srcset="./img/review-albania-avatar@2x.jpg 2x" width="38" height="38" alt="Маришка">
+                    </picture>
+                    Маришка
+                  </cite>
+                </blockquote>
+              </article>
+            </li>
+            <li class="tabs__item">
+              <div class="tabs__text">
+                <h3 class="tabs__text-title section-title">Македония</h3>
+                <p class="tabs__lead">В Македонии нашей целью будет посетить Палаошник, который расположился в
+                  удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы
+                  заберемся на вершину горы Татичев Камен где находится археологический памятник Кокино в длину около
+                  100 метров.</p>
+                <a href="#" class="tabs__button button">Купить тур сейчас</a>
+              </div>
+              <div class="tabs__picture">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tab-macedonia-mobile@1x.jpg 1x, ./img/tab-macedonia-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/tab-macedonia-tablet@1x.jpg 1x, ./img/tab-macedonia-tablet@2x.jpg 2x">
+                  <img src="./img/tab-macedonia-desktop@1x.jpg" srcset="./img/tab-macedonia-desktop@2x.jpg 2x"
+                    width="430" height="596" alt="Македония" class="tabs__img">
+                </picture>
+              </div>
+              <article class="tabs__review">
+                <h3 class="tabs__review-title">Отзывы</h3>
+                <blockquote class="tabs__review-inner">
+                  <p class="tabs__review-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но
+                    подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы
+                    впечатлила, особенно после долгого пути в гору.</p>
+                  <cite class="tabs__review-author">
+                    <picture>
+                      <img class="tabs__review-avatar" src="./img/review-macedonia-avatar@1x.jpg"
+                        srcset="./img/review-macedonia-avatar@2x.jpg 2x" width="38" height="38" alt="Михаил Кузьмин">
+                    </picture>
+                    Михаил Кузьмин
+                  </cite>
+                </blockquote>
+              </article>
+            </li>
+            <li class="tabs__item">
+              <div class="tabs__text">
+                <h3 class="tabs__text-title section-title">Черногория</h3>
+                <p class="tabs__lead">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
+                  некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина
+                  каньона составляет 80 км.</p>
+                <a href="#" class="tabs__button button">Купить тур сейчас</a>
+              </div>
+              <div class="tabs__picture">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tab-montenegro-mobile@1x.jpg 1x, ./img/tab-montenegro-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/tab-montenegro-tablet@1x.jpg 1x, ./img/tab-montenegro-tablet@2x.jpg 2x">
+                  <img src="./img/tab-montenegro-desktop@1x.jpg" srcset="./img/tab-montenegro-desktop@2x.jpg 2x"
+                    width="430" height="596" alt="Черногория" class="tabs__img">
+                </picture>
+              </div>
+              <article class="tabs__review">
+                <h3 class="tabs__review-title">Отзывы</h3>
+                <blockquote class="tabs__review-inner">
+                  <p class="tabs__review-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве
+                    что в фильмах :) Всем советую</p>
+                  <cite class="tabs__review-author">
+                    <picture>
+                      <img class="tabs__review-avatar" src="./img/review-montenegro-avatar@1x.jpg"
+                        srcset="./img/review-montenegro-avatar@2x.jpg 2x" width="38" height="38" alt="Анастасия Мей">
+                    </picture>
+                    Анастасия Мей
+                  </cite>
+                </blockquote>
+              </article>
+            </li>
+            <li class="tabs__item tabs__item--current">
+              <div class="tabs__text">
+                <h3 class="tabs__text-title section-title">Хорватия</h3>
+                <p class="tabs__lead">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
+                  увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными
+                  нерукотворными скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.</p>
+                <a href="#" class="tabs__button button">Купить тур сейчас</a>
+              </div>
+              <div class="tabs__picture">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tab-croatia-mobile@1x.jpg 1x, ./img/tab-croatia-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/tab-croatia-tablet@1x.jpg 1x, ./img/tab-croatia-tablet@2x.jpg 2x">
+                  <img src="./img/tab-croatia-desktop@1x.jpg" srcset="./img/tab-croatia-desktop@2x.jpg 2x"
+                    width="430" height="596" alt="Хорватия" class="tabs__img">
+                </picture>
+              </div>
+              <article class="tabs__review">
+                <h3 class="tabs__review-title">Отзывы</h3>
+                <blockquote class="tabs__review-inner">
+                  <p class="tabs__review-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто
+                    незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не
+                    верилось, но натур ни с чем не спутать по итогу :)</p>
+                  <cite class="tabs__review-author">
+                    <picture>
+                      <img class="tabs__review-avatar" src="./img/review-croatia-avatar@1x.jpg"
+                        srcset="./img/review-croatia-avatar@2x.jpg 2x" width="38" height="38" alt="Владимир Мулицин">
+                    </picture>
+                    Владимир Мулицин
                   </cite>
                 </blockquote>
               </article>

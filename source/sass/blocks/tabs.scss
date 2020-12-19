@@ -2,7 +2,7 @@
   width: 76.84%;
 
   @media (max-width: $tablet-width-max) {
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -18,16 +18,22 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    text-overflow: clip;
+    min-width: 0
   }
 }
 
 .tabs__menu-item {
-  @media (max-width: $tablet-width-max) {
-    margin-right: 14.61%;
-  }
+  &:not(:last-child) {
+    @media (max-width: $tablet-width-max) {
+      margin-right: 14.61%;
+    }
 
-  @media (max-width: $mobile-width-max) {
-    margin-right: 34.48%;
+    @media (max-width: $mobile-width-max) {
+      margin-right: 34.48%;
+      min-width: 0;
+      text-overflow: clip;
+    }
   }
 }
 
@@ -36,6 +42,7 @@
   font-weight: 500;
   letter-spacing: -0.415px;
   color: rgba($medium-dark, 0.3);
+  min-width: 0;
 
   &--current {
     color: $accent-main;
@@ -64,6 +71,8 @@
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-bottom: 415px;
   }
 }
@@ -125,15 +134,13 @@
   @media (max-width: $tablet-width-max) {
     position: absolute;
     left: -20px;
-    bottom: 0;
+    right: -20px;
     width: 100vw;
+    bottom: 0;
   }
 
   @media (max-width: $mobile-width-max) {
-    position: static;
     left: -15px;
-    width: auto;
-    height: 415px;
   }
 }
 
@@ -169,6 +176,10 @@
 
   @media (max-width: $mobile-width-max) {
     width: 268px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    bottom: -60px;
   }
 }
 
@@ -189,6 +200,15 @@
     width: 68px;
     height: 1px;
     background-color: $accent-main;
+
+    @media (max-width: $mobile-width-max) {
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 20px;
   }
 }
 
@@ -203,6 +223,10 @@
   line-height: 28px;
   letter-spacing: -0.41px;
   opacity: 0.7;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 20px;
+  }
 }
 
 .tabs__review-author {
@@ -212,9 +236,18 @@
   line-height: 20px;
   font-weight: 500;
   letter-spacing: -0.47px;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
 }
 
 .tabs__review-avatar {
   display: block;
   margin-right: 16px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
