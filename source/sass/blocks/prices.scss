@@ -1,0 +1,244 @@
+.prices {
+  padding-bottom: 138px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 125px;
+  }
+}
+
+.prices__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.prices__package-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 600;
+  letter-spacing: -1.27px;
+  color: rgba($deep-dark, 0.7);
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    font-size: 24px;
+  }
+}
+
+.prices__package-price {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.prices__package-lead {
+  margin-top: 36px;
+  margin-bottom: 28px;
+  width: 289px;
+
+  @media (max-width: $tablet-width-max) {
+    width: auto;
+  }
+}
+
+.prices__list {
+  display: flex;
+  order: -1;
+  width: 65.81%;
+
+  @media (max-width: $tablet-width-max) {
+    order: 1;
+    width: auto;
+    padding: 0 6.86%;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.prices__package {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  box-sizing: border-box;
+  padding: 40px 30px 30px;
+  border: 1px solid rgba($medium-dark, 0.3);
+  border-radius: 6px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+
+    @media (max-width: $tablet-width-max) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:hover {
+    border-color: $accent-main;
+    border-width: 3px;
+
+    .prices__package-options {
+      border-top-color: $accent-main;
+    }
+
+    .prices__package-icon {
+      fill: $deep-dark;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 45.86%;
+    padding: 30px 20px 80px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+  }
+}
+
+.prices__package-options {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid rgba($medium-dark, 0.3);
+}
+
+.prices__package-option {
+  line-height: 32px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    text-align: left;
+  }
+}
+
+.prices__package-icon {
+  margin-right: 16px;
+}
+
+.prices__package-button {
+  margin-top: auto;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width-max) {
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+  }
+}
+
+.prices__info {
+  width: 25.7%;
+
+  @media (max-width: $tablet-width-max) {
+    width: auto;
+  }
+}
+
+.prices__title {
+  position: relative;
+  padding-bottom: 21px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $accent-main;
+
+    @media (max-width: $tablet-width-max) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0;
+  }
+}
+
+.prices__description {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  opacity: 0.7;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.prices__call {
+  margin: 0;
+  padding-left: 46px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0;
+  }
+}
+
+.prices__slogan {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+  color: $deep-dark;
+}
+
+.prices__tel {
+  position: relative;
+  margin-top: 13px;
+  font-size: 20px;
+  line-height: 32px;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: $accent-main;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -46px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/svg/phone.svg");
+
+    @media (max-width: $tablet-width-max) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 10px;
+    color: $accent-main ;
+  }
+}
