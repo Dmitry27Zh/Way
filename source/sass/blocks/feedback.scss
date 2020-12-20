@@ -67,10 +67,10 @@
 
 .feedback__lead {
   margin-top: 15px;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
-.feedback__input-wrapper {
+.feedback__input-group {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
@@ -79,20 +79,6 @@
    flex-direction: column;
    margin-bottom: 0;
   }
-}
-
-.feedback__input {
-  box-sizing: border-box;
-  padding: 15px;
-  width: 269px;
-  border: 1px solid rgba($medium-dark, 0.3);
-  font-size: 14px;
-  line-height: 17px;
-
-  @media (max-width: $mobile-width-max) {
-    margin-bottom: 20px;
-    width: auto;
-   }
 }
 
 .feedback__button {

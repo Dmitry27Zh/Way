@@ -1,0 +1,15 @@
+.success {
+  display: flex;
+}
+
+.success__message {
+  margin: auto;
+  width: 399px;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+  }
+}
