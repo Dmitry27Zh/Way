@@ -18,8 +18,10 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    text-overflow: clip;
-    min-width: 0
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: calc(100vw - 30px);
   }
 }
 
@@ -30,9 +32,7 @@
     }
 
     @media (max-width: $mobile-width-max) {
-      margin-right: 34.48%;
-      min-width: 0;
-      text-overflow: clip;
+      margin-right: 34.72%;
     }
   }
 }
@@ -42,7 +42,6 @@
   font-weight: 500;
   letter-spacing: -0.415px;
   color: rgba($medium-dark, 0.3);
-  min-width: 0;
 
   &--current {
     color: $accent-main;
