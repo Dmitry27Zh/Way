@@ -71,6 +71,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-map@2x.png");
+    }
+
     @media (max-width: $tablet-width-max) {
       display: none;
     }
