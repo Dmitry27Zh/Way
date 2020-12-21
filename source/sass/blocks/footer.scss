@@ -122,12 +122,14 @@
 
   &:hover,
   &:focus {
-    .footer__contacts-path {
-      stroke: $accent-main;
-    }
+    .footer__contacts-icon {
+      &--mail {
+        fill: $accent-main;
+      }
 
-    .footer__contacts-icon--mail {
-      fill: $accent-main;
+      &--tel {
+        stroke: $accent-main;
+      }
     }
   }
 }

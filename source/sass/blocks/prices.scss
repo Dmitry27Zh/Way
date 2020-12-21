@@ -247,21 +247,17 @@
     color: $accent-main;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -46px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/svg/phone.svg");
-
-    @media (max-width: $tablet-width-max) {
-      display: none;
-    }
-  }
-
   @media (max-width: $tablet-width-max) {
     margin-top: 10px;
-    color: $accent-main ;
+    color: $accent-main;
+  }
+}
+
+.prices__tel-icon {
+  position: absolute;
+  left: -46px;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
   }
 }

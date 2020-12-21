@@ -35,8 +35,8 @@
   }
 
   @media (max-width: $tablet-width-max) {
-      margin-bottom: 20px;
-      width: auto;
+    margin-bottom: 20px;
+    width: auto;
   }
 }
 
@@ -184,7 +184,7 @@
   width: 76%;
   border: 1px solid rgba($white, 0.7);
   background-color: transparent;
-  font-weight : 500;
+  font-weight: 500;
 
   &:hover,
   &:focus {
