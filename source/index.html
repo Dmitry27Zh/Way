@@ -32,12 +32,12 @@
         <button class="main-nav__toggle" aria-label="Открыть выпадающее меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+            <a href="#places" class="main-nav__link">
               О путешествии
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+            <a href="#prices" class="main-nav__link">
               Цены
             </a>
           </li>
@@ -60,11 +60,11 @@
           <h2 class="promo__title section-title">Путешествие по Европе</h2>
           <p class="promo__lead">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
             потрясающая красота природы.</p>
-          <a href="#" class="promo__button button">смотреть тур</a>
+          <a href="#tabs" class="promo__button button">смотреть тур</a>
         </div>
       </div>
     </section>
-    <section class="places">
+    <section class="places" id="places">
       <div class="places__wrapper wrapper">
         <h2 class="places__title section-title">Места посещения</h2>
         <p class="places__lead">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
@@ -73,6 +73,12 @@
             <a href="#" class="places__card-link">
               <h3 class="places__card-title">Греция</h3>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/card-greece-mobile@1x.webp 1x, ./img/card-greece-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="./img/card-greece-tablet@1x.webp 1x, ./img/card-greece-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/card-greece-desktop@1x.webp 1x, ./img/card-greece-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="./img/card-greece-mobile@1x.jpg 1x, ./img/card-greece-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)"
@@ -87,6 +93,12 @@
             <a href="#" class="places__card-link">
               <h3 class="places__card-title">Албания</h3>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/card-albania-mobile@1x.webp 1x, ./img/card-albania-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="./img/card-albania-tablet@1x.webp 1x, ./img/card-albania-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/card-albania-desktop@1x.webp 1x, ./img/card-albania-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="./img/card-albania-mobile@1x.jpg 1x, ./img/card-albania-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)"
@@ -101,6 +113,12 @@
             <a href="#" class="places__card-link">
               <h3 class="places__card-title">Македония</h3>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/card-macedonia-mobile@1x.webp 1x, ./img/card-macedonia-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="./img/card-macedonia-tablet@1x.webp 1x, ./img/card-macedonia-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/card-macedonia-desktop@1x.webp 1x, ./img/card-macedonia-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="./img/card-macedonia-mobile@1x.jpg 1x, ./img/card-macedonia-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)"
@@ -115,6 +133,12 @@
             <a href="#" class="places__card-link">
               <h3 class="places__card-title">Черногория</h3>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/card-montenegro-mobile@1x.webp 1x, ./img/card-montenegro-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="./img/card-montenegro-tablet@1x.webp 1x, ./img/card-montenegro-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/card-montenegro-desktop@1x.webp 1x, ./img/card-montenegro-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="./img/card-montenegro-mobile@1x.jpg 1x, ./img/card-montenegro-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)"
@@ -129,6 +153,12 @@
             <a href="#" class="places__card-link">
               <h3 class="places__card-title">Хорватия</h3>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/card-croatia-mobile@1x.webp 1x, ./img/card-croatia-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="./img/card-croatia-tablet@1x.webp 1x, ./img/card-croatia-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/card-croatia-desktop@1x.webp 1x, ./img/card-croatia-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
                   srcset="./img/card-croatia-mobile@1x.jpg 1x, ./img/card-croatia-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)"
@@ -140,7 +170,7 @@
             <a href="#" class="places__card-button button">Смотреть подробнее</a>
           </li>
         </ul>
-        <section class="places__tabs tabs">
+        <section class="places__tabs tabs" id="tabs">
           <h2 class="visually-hidden">Подробное описание каждого места</h2>
           <ul class="tabs__menu">
             <li class="tabs__menu-item">
@@ -172,6 +202,12 @@
               </div>
               <div class="tabs__picture">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tab-greece-mobile@1x.webp 1x, ./img/tab-greece-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/tab-greece-tablet@1x.webp 1x, ./img/tab-greece-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/tab-greece-desktop@1x.webp 1x, ./img/tab-greece-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="./img/tab-greece-mobile@1x.jpg 1x, ./img/tab-greece-mobile@2x.jpg 2x">
                   <source media="(max-width: 1023px)"
@@ -188,6 +224,8 @@
                     такое, как будто стоишь на краю света!</p>
                   <cite class="tabs__review-author">
                     <picture>
+                      <source type="image/webp"
+                        srcset="./img/review-greece-avatar@1x.webp 1x, ./img/review-greece-avatar@2x.webp 2x">
                       <img class="tabs__review-avatar" src="./img/review-greece-avatar@1x.jpg"
                         srcset="./img/review-greece-avatar@2x.jpg 2x" width="38" height="38" alt="Влада Голицина">
                     </picture>
@@ -207,6 +245,12 @@
               </div>
               <div class="tabs__picture">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tab-albania-mobile@1x.webp 1x, ./img/tab-albania-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/tab-albania-tablet@1x.webp 1x, ./img/tab-albania-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/tab-albania-desktop@1x.webp 1x, ./img/tab-albania-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="./img/tab-albania-mobile@1x.jpg 1x, ./img/tab-albania-mobile@2x.jpg 2x">
                   <source media="(max-width: 1023px)"
@@ -222,6 +266,8 @@
                     с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
                   <cite class="tabs__review-author">
                     <picture>
+                      <source type="image/webp"
+                        srcset="./img/review-albania-avatar@1x.webp 1x, ./img/review-albania-avatar@2x.webp 2x">
                       <img class="tabs__review-avatar" src="./img/review-albania-avatar@1x.jpg"
                         srcset="./img/review-albania-avatar@2x.jpg 2x" width="38" height="38" alt="Маришка">
                     </picture>
@@ -241,6 +287,12 @@
               </div>
               <div class="tabs__picture">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tab-macedonia-mobile@1x.webp 1x, ./img/tab-macedonia-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/tab-macedonia-tablet@1x.webp 1x, ./img/tab-macedonia-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/tab-macedonia-desktop@1x.webp 1x, ./img/tab-macedonia-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="./img/tab-macedonia-mobile@1x.jpg 1x, ./img/tab-macedonia-mobile@2x.jpg 2x">
                   <source media="(max-width: 1023px)"
@@ -257,6 +309,8 @@
                     впечатлила, особенно после долгого пути в гору.</p>
                   <cite class="tabs__review-author">
                     <picture>
+                      <source type="image/webp"
+                        srcset="./img/review-macedonia-avatar@1x.webp 1x, ./img/review-macedonia-avatar@2x.webp 2x">
                       <img class="tabs__review-avatar" src="./img/review-macedonia-avatar@1x.jpg"
                         srcset="./img/review-macedonia-avatar@2x.jpg 2x" width="38" height="38" alt="Михаил Кузьмин">
                     </picture>
@@ -275,6 +329,12 @@
               </div>
               <div class="tabs__picture">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tab-montenegro-mobile@1x.webp 1x, ./img/tab-montenegro-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/tab-montenegro-tablet@1x.webp 1x, ./img/tab-montenegro-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/tab-montenegro-desktop@1x.webp 1x, ./img/tab-montenegro-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="./img/tab-montenegro-mobile@1x.jpg 1x, ./img/tab-montenegro-mobile@2x.jpg 2x">
                   <source media="(max-width: 1023px)"
@@ -290,6 +350,8 @@
                     что в фильмах :) Всем советую</p>
                   <cite class="tabs__review-author">
                     <picture>
+                      <source type="image/webp"
+                        srcset="./img/review-montenegro-avatar@1x.webp 1x, ./img/review-montenegro-avatar@2x.webp 2x">
                       <img class="tabs__review-avatar" src="./img/review-montenegro-avatar@1x.jpg"
                         srcset="./img/review-montenegro-avatar@2x.jpg 2x" width="38" height="38" alt="Анастасия Мей">
                     </picture>
@@ -308,6 +370,12 @@
               </div>
               <div class="tabs__picture">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tab-croatia-mobile@1x.webp 1x, ./img/tab-croatia-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/tab-croatia-tablet@1x.webp 1x, ./img/tab-croatia-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/tab-croatia-desktop@1x.webp 1x, ./img/tab-croatia-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="./img/tab-croatia-mobile@1x.jpg 1x, ./img/tab-croatia-mobile@2x.jpg 2x">
                   <source media="(max-width: 1023px)"
@@ -324,6 +392,8 @@
                     верилось, но натур ни с чем не спутать по итогу :)</p>
                   <cite class="tabs__review-author">
                     <picture>
+                      <source type="image/webp"
+                        srcset="./img/review-croatia-avatar@1x.webp 1x, ./img/review-croatia-avatar@2x.webp 2x">
                       <img class="tabs__review-avatar" src="./img/review-croatia-avatar@1x.jpg"
                         srcset="./img/review-croatia-avatar@2x.jpg 2x" width="38" height="38" alt="Владимир Мулицин">
                     </picture>
@@ -336,7 +406,7 @@
         </section>
       </div>
     </section>
-    <section class="prices">
+    <section class="prices" id="prices">
       <div class="prices__wrapper wrapper">
         <div class="prices__info">
           <h2 class="prices__title section-title">Цены</h2>
@@ -572,13 +642,14 @@
         <form class="order__form" action="https://echo.htmlacademy.ru/" method="POST">
           <div class="order__input-wrapper input-wrapper input-wrapper--tel">
             <label for="order-tel" class="visually-hidden">Телефон</label>
-            <input class="order__input order__input--tel input-wrapper__element input-wrapper__element--tel" type="tel" id="order-tel" name="order-tel"
-              placeholder="+7 Введите 10 цифр номера">
+            <input class="order__input order__input--tel input-wrapper__element input-wrapper__element--tel" type="tel"
+              id="order-tel" name="order-tel" placeholder="+7 Введите 10 цифр номера">
             <span class="input-wrapper__warning">Данные не верны</span>
           </div>
           <div class="order__input-wrapper input-wrapper">
             <label for="order-email" class="visually-hidden">E-mail</label>
-            <input class="order__input input-wrapper__element" type="email" id="order-email" name="order-email" placeholder="E-mail">
+            <input class="order__input input-wrapper__element" type="email" id="order-email" name="order-email"
+              placeholder="E-mail">
             <span class="input-wrapper__warning">Данные не верны</span>
           </div>
           <button class="order__button button" type="submit">Отправить</button>
