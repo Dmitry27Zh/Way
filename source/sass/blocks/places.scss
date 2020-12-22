@@ -15,6 +15,12 @@
   }
 }
 
+.places__wrapper {
+  @media (max-width: $tablet-width-max) {
+    padding: 0;
+  }
+}
+
 .places__title {
   position: relative;
   width: 358px;
@@ -41,6 +47,7 @@
 }
 
 .places__lead {
+  box-sizing: border-box;
   width: 328px;
   margin: 0;
   margin-bottom: 56px;
@@ -56,6 +63,7 @@
   @media (max-width: $mobile-width-max) {
     margin-bottom: 20px;
     width: auto;
+    padding: 0 15px;
   }
 }
 
@@ -66,15 +74,15 @@
   margin-bottom: -100px;
 
   @media (max-width: $tablet-width-max) {
-    padding-left: 8.38%;
-    padding-right: 7.69%;
+    padding-left: calc(8.38% + 20px);
+    padding-right: calc(7.69% + 20px);
     margin-bottom: -19px;
   }
 
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 0 15px;
     margin-bottom: -35px;
   }
 }
@@ -106,7 +114,7 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    width: 47.13%;
+    width: 47.63%;
     margin-bottom: 19px;
   }
 

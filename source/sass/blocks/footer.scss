@@ -34,8 +34,11 @@
   padding-right: 39px;
   border-right: 1px solid $additional-color;
 
-  @media (max-width: $mobile-width-max) {
+  @media (max-width: $tablet-width-max) {
     padding: 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
     padding-bottom: 20px;
     border-right: none;
     border-bottom: 1px solid $additional-color;
@@ -164,6 +167,12 @@
     margin-top: 30px;
     border-top: 1px solid $additional-color;
     text-align: center;
+  }
+}
+
+.footer__corporate-title {
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
   }
 }
 

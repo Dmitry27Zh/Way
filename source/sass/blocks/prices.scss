@@ -5,7 +5,7 @@
     padding-bottom: 125px;
   }
 
-  @media (max-width: $tablet-width-max) {
+  @media (max-width: $mobile-width-max) {
     padding-bottom: 50px;
   }
 }
@@ -23,6 +23,7 @@
 
 .prices__package-title {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   font-size: 28px;
@@ -40,6 +41,10 @@
 .prices__package-price {
   font-size: 25px;
   font-weight: 700;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 6px;
+  }
 }
 
 .prices__package-lead {
@@ -48,6 +53,8 @@
   width: 289px;
 
   @media (max-width: $tablet-width-max) {
+    margin-top: 11px;
+    margin-bottom: 7px;
     width: auto;
   }
 }
@@ -133,7 +140,7 @@
 
   @media (max-width: $tablet-width-max) {
     width: 288px;
-    padding: 30px 20px 80px;
+    padding: 30px 20px 46px;
   }
 }
 
@@ -141,6 +148,10 @@
   padding-top: 30px;
   margin-bottom: 30px;
   border-top: 1px solid rgba($medium-dark, 0.3);
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 20px;
+  }
 }
 
 .prices__package-option {
@@ -150,6 +161,10 @@
 
   &:not(:last-child) {
     margin-bottom: 15px;
+
+    @media (max-width: $tablet-width-max) {
+      margin-bottom: 10px;
+    }
   }
 
   @media (max-width: $tablet-width-max) {
@@ -244,6 +259,10 @@
   line-height: 34px;
   font-weight: 500;
   color: $deep-dark;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 18px;
+  }
 }
 
 .prices__tel {
@@ -260,7 +279,9 @@
 
   @media (max-width: $tablet-width-max) {
     margin-top: 10px;
+    font-size: 18px;
     color: $accent-main;
+    text-decoration: underline;
   }
 }
 
