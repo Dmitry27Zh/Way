@@ -1,8 +1,12 @@
 .footer-section-title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 600;
   color: $deep-dark;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 25px;
+  }
 }

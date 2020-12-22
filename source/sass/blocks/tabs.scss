@@ -65,7 +65,11 @@
 }
 
 .tabs__list {
-  margin-top: 35px;
+  margin-top: 80px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 35px;
+  }
 
   &::before {
     content: "";
