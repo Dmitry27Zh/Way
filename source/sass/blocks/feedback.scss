@@ -68,6 +68,11 @@
 .feedback__lead {
   margin-top: 8px;
   margin-bottom: 10px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 17px;
+    margin-bottom: 6px;
+  }
 }
 
 .feedback__form {
@@ -90,4 +95,8 @@
 
 .feedback__button {
   padding: 18px 40px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 20px;
+  }
 }

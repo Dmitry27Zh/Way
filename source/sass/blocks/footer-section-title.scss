@@ -9,4 +9,8 @@
   @media (max-width: $tablet-width-max) {
     margin-bottom: 25px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 22px;
+  }
 }

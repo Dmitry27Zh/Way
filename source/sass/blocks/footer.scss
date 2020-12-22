@@ -10,7 +10,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-top: 70px;
+    padding-top: 75px;
     padding-bottom: 25px;
     text-align: center;
   }
@@ -39,7 +39,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-right: none;
     border-bottom: 1px solid $additional-color;
   }
@@ -54,6 +54,7 @@
   @media (max-width: $mobile-width-max) {
     grid-template-columns: 1fr 1fr;
     column-gap: 0;
+    row-gap: 0;
   }
 }
 
@@ -167,6 +168,10 @@
     margin-top: 30px;
     border-top: 1px solid $additional-color;
     text-align: center;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 17px;
   }
 }
 

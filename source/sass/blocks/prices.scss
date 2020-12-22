@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-bottom: 50px;
+    padding-bottom: 55px;
   }
 }
 
@@ -75,6 +75,7 @@
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
   }
 }
 
@@ -141,6 +142,10 @@
   @media (max-width: $tablet-width-max) {
     width: 288px;
     padding: 30px 20px 46px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 42px;
   }
 }
 
@@ -240,6 +245,10 @@
   @media (max-width: $tablet-width-max) {
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 17px;
   }
 }
 
