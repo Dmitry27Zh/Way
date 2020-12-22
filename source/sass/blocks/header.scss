@@ -1,7 +1,7 @@
 .header {
   position: relative;
-  padding-top: 39px;
-  padding-bottom: 38px;
+  padding-top: 35px;
+  padding-bottom: 32px;
 
   @media (max-width: $tablet-width-max) {
     padding-top: 18px;
@@ -69,5 +69,5 @@
 }
 
 .header__tel-icon {
-  margin-right: 6px;
+  margin-right: 12px;
 }

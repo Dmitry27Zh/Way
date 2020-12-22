@@ -118,6 +118,10 @@
       }
     }
 
+    .prices__package-title {
+      color: $accent-main;
+    }
+
     .prices__package-options {
       border-top-color: $accent-main;
     }
@@ -140,6 +144,8 @@
 }
 
 .prices__package-option {
+  position: relative;
+  padding-left: 30px;
   line-height: 32px;
 
   &:not(:last-child) {
@@ -152,7 +158,9 @@
 }
 
 .prices__package-icon {
-  margin-right: 16px;
+  position: absolute;
+  top: 12px;
+  left: 0;
 }
 
 .prices__package-button {
@@ -176,10 +184,12 @@
 }
 
 .prices__info {
-  width: 25.7%;
+  width: 24.9%;
+  margin-top: 13px;
 
   @media (max-width: $tablet-width-max) {
     width: auto;
+    margin: 0;
   }
 }
 
@@ -210,6 +220,7 @@
   margin-top: 30px;
   margin-bottom: 60px;
   opacity: 0.7;
+  line-height: 27px;
 
   @media (max-width: $tablet-width-max) {
     margin-top: 20px;
